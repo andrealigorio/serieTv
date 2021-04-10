@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Serie TV</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div @click="refreshPage" class="logo">
+                <img src="img/serieTvlogo.png" alt="Logo Serie TV">
+            </div>
+            <div class="filter">
+                <div class="order">
+                    <label for="order">Ordina per</label>
+                    <select name="order" id="order" v-model="orderSelected" @change="changeSelected">
+                        <option value="title">Titolo</option>
+                        <option value="vote">Valutazione</option>
+                    </select>
+                </div>
+                <div class="range_vote">
+                    <label for="range_vote">Valutazione</label>
+                    <select name="range_vote" id="range_vote" v-model="voteSelected">
+                        <option value="all">Tutti</option>
+                        <option v-for="vote in votes" :value="vote">{{vote}}</option>
+                    </select>
+                </div>
+                <div class="genre_selected">
+                    <label for="genre_selected">Genere</label>
+                    <select name="genre_selected" id="genre_selected" v-model="genreSelected">
+                        <option value="all">Tutti</option>
+                        <option v-for="genre in genres" :value="genre">{{genre}}</option>
+                    </select>
+                </div>
+                <div class="choise_platform">
+                    <label for="choise_platform">Piattaforma</label>
+                    <select name="choise_platform" id="choise_platform" v-model="platformSelected">
+                        <option value="all">Tutte</option>
+                        <option v-for="platform in platforms" :value="platform">{{platform}}</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div v-if="filterCard(card)" v-for="(card, index) in cards" class="card">
+                <div class="cover">
+                    <transition name="fade">
+                        <div v-if="(visible) && (active == index)" class="story">
+                            <div>TRAMA</div>
+                            {{card.story}}
+                        </div>
+                    </transition>
+                    <img :src="'img/' + card.title + '.jpg'" :alt="card.title">
+                </div>
+                <div class="description">
+                    <div class="title">
+                        {{card.title}}
+                    </div>
+                    <div class="info">
+                        <div class="genre">
+                            <span>Genere:</span> {{card.genre.join(", ")}}
+                        </div>
+                        <div class="seasons">
+                            <span>Stagioni:</span> {{card.seasons}}
+                        </div>
+                        <div class="state">
+                            <span>Stato:</span> {{card.state}}
+                        </div>
+                        <div class="vote">
+                            <span>Voto:</span> {{card.vote}}
+                        </div>
+                    </div>
+                    <div class="considerations">
+                        <div>Considerazioni:</div>
+                        {{card.considerations}}
+                    </div>
+                    <button class="btn" @click="cardSelected(index)">TRAMA</button>
+                    <div class="platform">
+                        <img :src="'img/' + card.platform + '.png'" :alt="card.platform">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
