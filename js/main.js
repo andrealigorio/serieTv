@@ -401,6 +401,16 @@ var app = new Vue({
                 story: "In cerca di un nuovo inizio, un'infermiera specializzata lascia Los Angeles per trasferirsi in una remota cittadina a nord che si rivelerà piena di sorprese.",
                 considerations: "Tratta dai romanzi di Robyn Carr, imperdibile per gi amanti del genere.",
                 platform: "netflix"
+            },
+            {
+                title: "Forever",
+                genre: ["Commedia", "Drammatico"],
+                seasons: 1,
+                state: "Miniserie",
+                vote: 6,
+                story: "Le esistenze di June e Oscar prendono una svolta inaspettata quando i due si ritrovano in un territorio del tutto sconosciuto, interrogandosi sull'amore e sul loro stesso matrimonio.",
+                considerations: "Breve, a volte lenta e triste, nonostante abbia deluso le aspettative resta un prodotto carino.",
+                platform: "prime"
             }
         ]
     },
