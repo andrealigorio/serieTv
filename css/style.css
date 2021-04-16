@@ -111,6 +111,17 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
+.info .vote {
+    display: flex;
+    align-items: flex-start;
+}
+.vote span {
+    margin-right: 5px;
+}
+.vote .stars {
+    display: flex;
+    margin-left: 10px;
+}
 .btn {
     cursor: pointer;
     background-color: #343a40;

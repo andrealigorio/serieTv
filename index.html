@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Serie TV</title>
@@ -74,6 +77,11 @@
                         </div>
                         <div class="vote">
                             <span>Voto:</span> {{card.vote}}
+                            <div class="stars">
+                                <i v-for="star in fullStars(card)" class="fas fa-star"></i>
+                                <i v-if="halfStars(card)" class="fas fa-star-half-alt"></i>
+                                <i v-for="star in (emptyStars(card))" class="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="considerations">

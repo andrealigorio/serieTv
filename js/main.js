@@ -411,6 +411,16 @@ var app = new Vue({
                 story: "Le esistenze di June e Oscar prendono una svolta inaspettata quando i due si ritrovano in un territorio del tutto sconosciuto, interrogandosi sull'amore e sul loro stesso matrimonio.",
                 considerations: "Breve, a volte lenta e triste, nonostante abbia deluso le aspettative resta un prodotto carino.",
                 platform: "prime"
+            },
+            {
+                title: "Sky rojo",
+                genre: ["Azione", "Drammatico"],
+                seasons: 1,
+                state: "In corso",
+                vote: 7,
+                story: "Un tragico incidente in un bordello spinge tre donne con un passato difficile in una pazza fuga dal loro protettore e dai suoi scagnozzi.",
+                considerations: "Coinvolgente e piena d'azione, vista con scetticismo, rimasto colpito positivamente.",
+                platform: "netflix"
             }
         ]
     },
@@ -480,6 +490,20 @@ var app = new Vue({
         },
         refreshPage() {
             location.reload();
+        },
+        fullStars(card) {
+            var fullStars = Math.floor(card.vote / 2);
+            return fullStars;
+        },
+        halfStars(card) {
+            if(card.vote % 2 != 0) {
+                return true;
+            }
+            return false;
+        },
+        emptyStars(card) {
+            var emptyStars = Math.ceil(card.vote / 2);
+            return (5 - emptyStars);
         }
     },
     mounted() {
