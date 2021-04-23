@@ -52,6 +52,11 @@ header {
 .filter > div {
     margin: 0 20px;
 }
+.elements {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
 .container {
     width: 100%;
     padding: 20px;
@@ -110,6 +115,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.state {
+    display: flex;
+    justify-content: space-between;
+}
+.state .flag {
+    height: 20px;
+    margin-right: 5px;
+}
+.flag img {
+    height: 100%;
 }
 .info .vote {
     display: flex;
@@ -200,6 +216,9 @@ header {
     .story, .description {
         font-size: 80%;
     }
+    .state .flag {
+        height: 15px;
+    }
     .story div {
         padding: 10px 0;
     }
@@ -228,6 +247,9 @@ header {
     }
     .story, .description {
         font-size: 60%;
+    }
+    .state .flag {
+        height: 10px;
     }
     .platform {
         height: 30px;

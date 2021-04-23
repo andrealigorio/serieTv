@@ -29,29 +29,31 @@
                 </div>
                 <div class="range_vote">
                     <label for="range_vote">Valutazione</label>
-                    <select name="range_vote" id="range_vote" v-model="voteSelected">
+                    <select name="range_vote" id="range_vote" v-model="voteSelected" @change="filterCard">
                         <option value="all">Tutti</option>
                         <option v-for="vote in votes" :value="vote">{{vote}}</option>
                     </select>
                 </div>
                 <div class="genre_selected">
                     <label for="genre_selected">Genere</label>
-                    <select name="genre_selected" id="genre_selected" v-model="genreSelected">
+                    <select name="genre_selected" id="genre_selected" v-model="genreSelected" @change="filterCard">
                         <option value="all">Tutti</option>
                         <option v-for="genre in genres" :value="genre">{{genre}}</option>
                     </select>
                 </div>
                 <div class="choise_platform">
                     <label for="choise_platform">Piattaforma</label>
-                    <select name="choise_platform" id="choise_platform" v-model="platformSelected">
+                    <select name="choise_platform" id="choise_platform" v-model="platformSelected" @change="filterCard">
                         <option value="all">Tutte</option>
                         <option v-for="platform in platforms" :value="platform">{{platform}}</option>
                     </select>
                 </div>
             </div>
         </header>
+        <h2 v-if="filtered.length == 1" class="elements">{{filtered.length}} elemento</h2>
+        <h2 v-else class="elements">{{filtered.length}} elementi</h2>
         <div class="container">
-            <div v-if="filterCard(card)" v-for="(card, index) in cards" class="card">
+            <div v-for="(card, index) in filtered" class="card">
                 <div class="cover">
                     <transition name="fade">
                         <div v-if="(visible) && (active == index)" class="story">
@@ -73,7 +75,12 @@
                             <span>Stagioni:</span> {{card.seasons}}
                         </div>
                         <div class="state">
-                            <span>Stato:</span> {{card.state}}
+                            <div>
+                                <span>Stato:</span> {{card.state}}
+                            </div>
+                            <div class="flag">
+                                <img :src="'flags/' + card.flag + '.svg'" :alt="card.flag">
+                            </div>
                         </div>
                         <div class="vote">
                             <span>Voto:</span> {{card.vote}}
