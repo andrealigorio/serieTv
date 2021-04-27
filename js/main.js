@@ -474,6 +474,17 @@ var app = new Vue({
                 story: "Per ritrovare la figlia vittima di un rapimento, Antonio si fa mandare in una prigione in Colombia innescando una serie di eventi che coinvolgeranno molte persone.",
                 considerations: "Un crescendo episodio dopo episodio, interessante fino alla fine, mai noioso.",
                 platform: "netflix"
+            },
+            {
+                title: "Good Omens",
+                genre: ["Commedia", "Fantascienza"],
+                seasons: 1,
+                state: "Miniserie",
+                flag: "gb",
+                vote: 6,
+                story: "Una coppia, formata da un angelo e da un demone, deve unire le forze ed escogitare un modo per salvare il pianeta, mentre la fine dei tempi si avvicina in maniera inevitabile ed inesorabile.",
+                considerations: "Inizialmente può sembrare poco interessante ma, tutto sommato, ben fatta e con un bel finale.",
+                platform: "prime"
             }
         ]
     },
