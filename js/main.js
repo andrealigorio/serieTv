@@ -212,7 +212,7 @@ var app = new Vue({
                 platform: "netflix"
             },
             {
-                title: "Firefly lane",
+                title: "L'estate in cui imparammo a volare",
                 genre: ["Drammatico", "Sentimentale"],
                 seasons: 1,
                 state: "In corso",
@@ -352,7 +352,7 @@ var app = new Vue({
                 vote: 8,
                 story: "Quando un aereo precipita, quarantotto superstiti trovano rifugio su un'isola deserta. Tutti si trovano ad adattare le proprie scelte etiche, religiose e politiche a quelle degli altri per permettere al gruppo di sopravvivere.",
                 considerations: "Ha fatto la storia delle serie tv, bellissima a parte un finale discutibile.",
-                platform: "prime"
+                platform: "disney+"
             },
             {
                 title: "The 100",
@@ -476,7 +476,7 @@ var app = new Vue({
                 platform: "netflix"
             },
             {
-                title: "Good Omens",
+                title: "Good omens",
                 genre: ["Commedia", "Fantascienza"],
                 seasons: 1,
                 state: "Miniserie",
@@ -485,13 +485,28 @@ var app = new Vue({
                 story: "Una coppia, formata da un angelo e da un demone, deve unire le forze ed escogitare un modo per salvare il pianeta, mentre la fine dei tempi si avvicina in maniera inevitabile ed inesorabile.",
                 considerations: "Inizialmente può sembrare poco interessante ma, tutto sommato, ben fatta e con un bel finale.",
                 platform: "prime"
+            },
+            {
+                title: "The missing",
+                genre: ["Thriller", "Drammatico", "Giallo"],
+                seasons: 2,
+                state: "Conclusa",
+                flag: "gb",
+                vote: 8,
+                story: "Incentrata, in ogni stagione, su un caso di scomparsa del figlio. Mischia mistero e angoscia, al dramma psicologico e personale di chi rimane nella sua quotidianità, privato del proprio figlio.",
+                considerations: "Serie antologica ricca di momenti di suspense, con ambientazioni costruite alla perfezione e una recitazione di alto livello.",
+                platform: "prime"
             }
         ]
     },
     methods: {
         cardSelected(index) {
-            this.active = index;
-            this.visible = !this.visible;
+            if(index == this.active) {
+                this.visible = !this.visible;
+            } else {
+                this.active = index;
+                this.visible = true;
+            }
         },
         genreArray() {
             this.filtered.forEach(element => {
