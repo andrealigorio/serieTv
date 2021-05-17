@@ -496,6 +496,17 @@ var app = new Vue({
                 story: "Incentrata, in ogni stagione, su un caso di scomparsa del figlio. Mischia mistero e angoscia, al dramma psicologico e personale di chi rimane nella sua quotidianità, privato del proprio figlio.",
                 considerations: "Serie antologica ricca di momenti di suspense, con ambientazioni costruite alla perfezione e una recitazione di alto livello.",
                 platform: "prime"
+            },
+            {
+                title: "Mindhunter",
+                genre: ["Thriller", "Crime", "Drammatico"],
+                seasons: 2,
+                state: "In corso",
+                flag: "us",
+                vote: 7,
+                story: "Alla fine degli anni '70 due agenti dell'FBI danno impulso alla criminologia scavando nella psicologia degli assassini ed entrando in contatto con mostri troppo reali.",
+                considerations: "Basata su reali serial killer degli anni 70, riesce a coinvolgerti e a farti comprendere la loro psicologia.",
+                platform: "netflix"
             }
         ]
     },
