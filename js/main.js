@@ -1,3 +1,4 @@
+
 Vue.config.devtools = true;
 var app = new Vue({
     el: "#app",
@@ -49,8 +50,8 @@ var app = new Vue({
             {
                 title: "Atypical",
                 genre: ["Commedia", "Drammatico"],
-                seasons: 3,
-                state: "In corso",
+                seasons: 4,
+                state: "Conclusa",
                 flag: "us",
                 vote: 9,
                 story: "Un adolescente con disturbi dello spettro autistico decide di trovarsi una ragazza e il suo bisogno d'indipendenza spinge l'intera famiglia a rimettersi in discussione.",
@@ -71,7 +72,7 @@ var app = new Vue({
             {
                 title: "Che fine ha fatto Sara",
                 genre: ["Drammatico", "Giallo", "Thriller"],
-                seasons: 1,
+                seasons: 2,
                 state: "In corso",
                 flag: "mx",
                 vote: 8,
@@ -170,8 +171,8 @@ var app = new Vue({
             {
                 title: "Il metodo Kominsky",
                 genre: ["Commedia"],
-                seasons: 2,
-                state: "In corso",
+                seasons: 3,
+                state: "Conclusa",
                 flag: "us",
                 vote: 8,
                 story: "L'insegnante di recitazione Sandy Kominsky e il suo grande amico Norman Newlander si tengono allegri mentre affrontano gli alti e bassi legati all'invecchiamento.",
@@ -225,7 +226,7 @@ var app = new Vue({
             {
                 title: "Lupin",
                 genre: ["Azione", "Giallo", "Drammatico"],
-                seasons: 1,
+                seasons: 2,
                 state: "In corso",
                 flag: "fr",
                 vote: 8,
@@ -434,10 +435,10 @@ var app = new Vue({
             {
                 title: "Virgin river",
                 genre: ["Sentimentale", "Drammatico"],
-                seasons: 2,
+                seasons: 3,
                 state: "In corso",
                 flag: "us",
-                vote: 8,
+                vote: 9,
                 story: "In cerca di un nuovo inizio, un'infermiera specializzata lascia Los Angeles per trasferirsi in una remota cittadina a nord che si rivelerà piena di sorprese.",
                 considerations: "Tratta dai romanzi di Robyn Carr, imperdibile per gi amanti del genere.",
                 platform: "netflix"
@@ -456,7 +457,7 @@ var app = new Vue({
             {
                 title: "Sky rojo",
                 genre: ["Azione", "Drammatico"],
-                seasons: 1,
+                seasons: 2,
                 state: "In corso",
                 flag: "es",
                 vote: 7,
@@ -506,6 +507,28 @@ var app = new Vue({
                 vote: 7,
                 story: "Alla fine degli anni '70 due agenti dell'FBI danno impulso alla criminologia scavando nella psicologia degli assassini ed entrando in contatto con mostri troppo reali.",
                 considerations: "Basata su reali serial killer degli anni 70, riesce a coinvolgerti e a farti comprendere la loro psicologia.",
+                platform: "netflix"
+            },
+            {
+                title: "Generazione 56k",
+                genre: ["Commedia", "Sentimentale"],
+                seasons: 1,
+                state: "In corso",
+                flag: "it",
+                vote: 8,
+                story: "Un incontro casuale porta due trentenni a ricordare il 1998, l'anno della loro prima tempesta ormonale e della svolta epocale portata da Internet nelle loro vite.",
+                considerations: "Ti riporta negli anni 90 lasciandoti un pizzico di malinconia. Emozionante, da guardare tutto di un fiato.",
+                platform: "netflix"
+            },
+            {
+                title: "Sex life",
+                genre: ["Drammatico", "Sentimentale", "Erotico"],
+                seasons: 1,
+                state: "In corso",
+                flag: "us",
+                vote: 7,
+                story: "Una donna vede scontrarsi i suoi audaci trascorsi sessuali e il suo presente di moglie e mamma quando nella sua vita ricompare un ex ribelle che non riesce a dimenticare.",
+                considerations: "La difficile scelta tra una vita perfetta e l'amore mai dimenticato rende questa serie interessante, anche se un pò troppo esplicita.",
                 platform: "netflix"
             }
         ]
