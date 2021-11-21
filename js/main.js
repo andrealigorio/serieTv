@@ -530,6 +530,61 @@ var app = new Vue({
                 story: "Una donna vede scontrarsi i suoi audaci trascorsi sessuali e il suo presente di moglie e mamma quando nella sua vita ricompare un ex ribelle che non riesce a dimenticare.",
                 considerations: "La difficile scelta tra una vita perfetta e l'amore mai dimenticato rende questa serie interessante, anche se un pò troppo esplicita.",
                 platform: "netflix"
+            },
+            {
+                title: "Lucifer",
+                genre: ["Drammatico", "Fantascienza", "Commedia"],
+                seasons: 6,
+                state: "Conclusa",
+                flag: "us",
+                vote: 8,
+                story: "Stanco di essere il Signore degli inferi, il diavolo si trasferisce a Los Angeles, dove apre un nightclub e stabilisce un legame con una detective della omicidi.",
+                considerations: "Lunga, ad alcuni tratti ripetitiva e lenta ma nel complesso divertente e con un bel finale.",
+                platform: "netflix"
+            },
+            {
+                title: "Squid game",
+                genre: ["Drammatico", "Azione", "Thriller"],
+                seasons: 1,
+                state: "In corso",
+                flag: "kr",
+                vote: 9,
+                story: "Centinaia di individui a corto di denaro accettano uno strano invito a competere in giochi per bambini. Li attende un premio invitante, ma la posta in gioco è mortale.",
+                considerations: "Drama coreano dal successo mondiale, coinvolgente nonostante lingua coreana con sottotitoli, imperdibile.",
+                platform: "netflix"
+            },
+            {
+                title: "Sex education",
+                genre: ["Drammatico", "Sentimentale", "Commedia"],
+                seasons: 3,
+                state: "In corso",
+                flag: "gb",
+                vote: 8,
+                story: "L'insicuro Otis sa tutto sul sesso, grazie alla madre terapeuta. Così la ribelle Maeve gli propone di fondare una clinica all'interno della scuola.",
+                considerations: "Commedia divertente, incentrata sul sesso in età adolescenziale, coinvolgente e con un cast eccellente.",
+                platform: "netflix"
+            },
+            {
+                title: "Guida astrologica per cuori infranti",
+                genre: ["Commedia", "Sentimentale"],
+                seasons: 1,
+                state: "In corso",
+                flag: "it",
+                vote: 5,
+                story: "Alice è affranta e disperatamente single. Ma dopo aver stretto amicizia con un carismatico guru dell'astrologia, si rivolge alle stelle per trovare l'anima gemella.",
+                considerations: "La recitazione non eccelsa e la trama abbassano il voto finale.",
+                platform: "netflix"
+            },
+            {
+                title: "Cruel Summer",
+                genre: ["Thriller", "Drammatico"],
+                seasons: 1,
+                state: "In corso",
+                flag: "us",
+                vote: 9,
+                story: "La serie segue due adolescenti: Kate Wallis, una ragazza popolare amata da tutti, e la timida e introversa Jeanette Turner. Nel 1993 Kate scompare per mano del nuovo vice preside Martin Harris, e Jeanette prende il sopravvento su quella che era la sua vita.",
+                considerations: "Thriller psicologico con colpi di scena dall'inizio fino agli ultimi 10 secondi dell'ultimo episodio, stupendo.",
+                platform: "prime"
             }
         ]
     },
