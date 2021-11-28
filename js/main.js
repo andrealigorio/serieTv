@@ -585,6 +585,28 @@ var app = new Vue({
                 story: "La serie segue due adolescenti: Kate Wallis, una ragazza popolare amata da tutti, e la timida e introversa Jeanette Turner. Nel 1993 Kate scompare per mano del nuovo vice preside Martin Harris, e Jeanette prende il sopravvento su quella che era la sua vita.",
                 considerations: "Thriller psicologico con colpi di scena dall'inizio fino agli ultimi 10 secondi dell'ultimo episodio, stupendo.",
                 platform: "prime"
+            },
+            {
+                title: "You",
+                genre: ["Thriller", "Drammatico"],
+                seasons: 3,
+                state: "In corso",
+                flag: "us",
+                vote: 9,
+                story: "Un ragazzo pericolosamente affascinante e profondamente ossessivo ricorre a misure estreme per entrare nelle vite delle persone che lo attraggono.",
+                considerations: "Nonostante il copione sia più o meno lo stesso in ogni stagione non si riesce a fare a meno di guardarla.",
+                platform: "netflix"
+            },
+            {
+                title: "Strappare lungo i bordi",
+                genre: ["Animazione", "Commedia"],
+                seasons: 1,
+                state: "In corso",
+                flag: "it",
+                vote: 9,
+                story: "Un fumettista romano la cui coscienza prende le forme di un armadillo riflette sulla sua vita e un amore mancato mentre con due amici si reca fuori città.",
+                considerations: "Un viaggio nei sentimenti, dalle risate alla commozione, una perla.",
+                platform: "netflix"
             }
         ]
     },
