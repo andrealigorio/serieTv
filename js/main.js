@@ -17,8 +17,8 @@ var app = new Vue({
             {
                 title: "La casa di carta",
                 genre: ["Crime", "Thriller"],
-                seasons: 4,
-                state: "In corso",
+                seasons: 5,
+                state: "Conclusa",
                 flag: "es",
                 vote: 8,
                 story: "Otto ladri si barricano nell'edificio della Zecca spagnola con alcuni ostaggi, mentre una mente criminale manipola la polizia per mettere in atto il suo piano.",
@@ -402,7 +402,7 @@ var app = new Vue({
             {
                 title: "The sinner",
                 genre: ["Thriller", "Drammatico", "Giallo"],
-                seasons: 2,
+                seasons: 3,
                 state: "In corso",
                 flag: "us",
                 vote: 8,
