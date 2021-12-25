@@ -565,7 +565,7 @@ var app = new Vue({
                 platform: "netflix"
             },
             {
-                title: "Guida astrologica per cuori infranti",
+                title: "Guida Astrologica per cuori infranti",
                 genre: ["Commedia", "Sentimentale"],
                 seasons: 1,
                 state: "In corso",
