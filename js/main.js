@@ -83,7 +83,7 @@ var app = new Vue({
             {
                 title: "Cobra kai",
                 genre: ["Commedia", "Azione", "Drammatico"],
-                seasons: 3,
+                seasons: 4,
                 state: "In corso",
                 flag: "us",
                 vote: 8,
@@ -606,6 +606,17 @@ var app = new Vue({
                 vote: 9,
                 story: "Un fumettista romano la cui coscienza prende le forme di un armadillo riflette sulla sua vita e un amore mancato mentre con due amici si reca fuori città.",
                 considerations: "Un viaggio nei sentimenti, dalle risate alla commozione, una perla.",
+                platform: "netflix"
+            },
+            {
+                title: "Incastrati",
+                genre: ["Commedia", "Thriller", "Giallo"],
+                seasons: 1,
+                state: "In corso",
+                flag: "it",
+                vote: 9,
+                story: "Due sfortunati tecnici della TV si ritrovano per caso sulla scena di un delitto e per evitare di essere sospettati finiscono per mettersi sempre più nei guai.",
+                considerations: "Non ha nulla a che vedere con le solite commedie italiane, è di un livello molto superiore, da non perdere.",
                 platform: "netflix"
             }
         ]
