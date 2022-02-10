@@ -358,8 +358,8 @@ var app = new Vue({
             {
                 title: "The 100",
                 genre: ["Fantascienza", "Drammatico", "Azione"],
-                seasons: 6,
-                state: "In corso",
+                seasons: 7,
+                state: "Conclusa",
                 flag: "us",
                 vote: 6,
                 story: "Un secolo dopo la devastazione nucleare della Terra, da una stazione spaziale vengono inviate 100 persone sul pianeta per vedere se è ancora abitabile.",
@@ -616,7 +616,7 @@ var app = new Vue({
                 flag: "it",
                 vote: 9,
                 story: "Due sfortunati tecnici della TV si ritrovano per caso sulla scena di un delitto e per evitare di essere sospettati finiscono per mettersi sempre più nei guai.",
-                considerations: "Non ha nulla a che vedere con le solite commedie italiane, è di un livello molto superiore, da non perdere.",
+                considerations: "Non ha nulla a che vedere con le solite commedie italiane, è di un livello superiore, da non perdere.",
                 platform: "netflix"
             }
         ]
